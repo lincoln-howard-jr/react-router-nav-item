@@ -1,22 +1,50 @@
 {
-  "name": "react-router-nav-item",
+  "name": "react-nav-item",
   "version": "1.0.0",
-  "description": "Component combining react-router (v4) and react-bootstrap to create a unified nav item.",
-  "main": "index.js",
+  "description": "NavItem",
+  "main": "lib/NavItem.js",
+  "author": "Lincoln Howard",
+  "homepage": "https://github.com/LincolnHoward/react-nav-item",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lincoln-howard-jr/react-router-nav-item.git"
+    "url": "https://github.com/LincolnHoward/react-nav-item.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lincoln-howard-jr/react-router-nav-item/issues"
+    "url": "https://github.com/LincolnHoward/react-nav-item/issues"
   },
-  "homepage": "https://github.com/lincoln-howard-jr/react-router-nav-item#readme",
   "dependencies": {
-    "react": "^15.5.4",
+    "classnames": "^2.1.2",
+    "react": "^0.14.9",
     "react-bootstrap": "^0.30.9",
-    "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1"
-  }
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.3",
+    "eslint": "^1.6.0",
+    "eslint-plugin-react": "^3.5.1",
+    "gulp": "^3.9.0",
+    "react": "^0.14.0",
+    "react-component-gulp-tasks": "^0.7.6",
+    "react-dom": "^0.14.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0"
+  },
+  "browserify-shim": {
+    "react": "global:React"
+  },
+  "scripts": {
+    "build": "gulp clean && NODE_ENV=production gulp build",
+    "examples": "gulp dev:server",
+    "lint": "eslint ./; true",
+    "publish:site": "NODE_ENV=production gulp publish:examples",
+    "release": "NODE_ENV=production gulp release",
+    "start": "gulp dev",
+    "test": "echo \"no tests yet\" && exit 0",
+    "watch": "gulp watch:lib"
+  },
+  "keywords": [
+    "react",
+    "react-component"
+  ]
 }
