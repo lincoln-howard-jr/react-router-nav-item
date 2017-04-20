@@ -1,0 +1,22 @@
+{
+  "name": "react-router-nav-item",
+  "version": "1.0.0",
+  "description": "Component combining react-router (v4) and react-bootstrap to create a unified nav item.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lincoln-howard-jr/react-router-nav-item.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lincoln-howard-jr/react-router-nav-item/issues"
+  },
+  "homepage": "https://github.com/lincoln-howard-jr/react-router-nav-item#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.30.9",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
+  }
+}
