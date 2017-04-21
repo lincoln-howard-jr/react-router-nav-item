@@ -18,7 +18,7 @@ class WrappedNavItem extends Component {
       return (<Redirect to={this.props.href} />);
     }
     return (
-      <TwbsNavItem onClick={this.handler}>{this.props.children}</TwbsNavItem>
+      <TwbsNavItem {...this.props} onClick={this.handler}>{this.props.children}</TwbsNavItem>
     );
   }
 }
